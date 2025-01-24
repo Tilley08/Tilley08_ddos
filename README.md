@@ -1,6 +1,9 @@
 # Tilley08_ddos
 DDoS Attack Sequence
 
+# Tilley08_ddos
+DDoS Attack Sequence
+
 ```mermaid
 sequenceDiagram
     Attacker->>Botnet: Signal Vulnerable Access Point
@@ -12,8 +15,6 @@ sequenceDiagram
     Firewall->>Servers: Filter Requests
     Servers->>Database: Access Data
     Database->>FileSystem: Retrieve Data
-    ``
-
 
 In the diagram above, the attackers discover vulnerable access points and use a control server to signal to the botnet and distributes requests foir the individual bots. One way, the bots attack is by sending a large volume of resource extensive requests that focus on applications or we pages that require database access. These attacks are hard to detect because they appear as normal traffic.
 
