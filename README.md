@@ -3,7 +3,7 @@ DDoS Attack Sequence
 
 
 ```mermaid
-Sequence Diagram TD
+Flowchart TD
     Bots -->|Send Requests| BotNet
     BotNet -->|Distribute Requests| WebServer
     WebServer -->|Process Requests| Firewall
