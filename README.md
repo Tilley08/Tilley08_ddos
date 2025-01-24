@@ -11,5 +11,4 @@ Graph TD
     Servers -->|Access Data| Database
     Database -->|Retrieve Data| FileSystem
     FileSystem -->|Store Data| Employee
-
-    ```
+ ```
