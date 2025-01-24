@@ -3,12 +3,12 @@ DDoS Attack Sequence
 
 
 ```mermaid
-Graph TD;
-    Bots -->|Send Requests| BotNet;
-    BotNet -->|Distribute Requests| WebServer;
-    WebServer -->|Process Requests| Firewall;
-    Firewall -->|Filter Requests| Servers;
-    Servers -->|Access Data| Database;
-    Database -->|Retrieve Data| FileSystem;
-    FileSystem -->|Store Data| Employee;
-```
+sequenceDiagram
+    Bots->>BotNet: Send Requests
+    BotNet->>WebServer: Distribute Requests
+    WebServer->>Firewall: Process Requests
+    Firewall->>Servers: Filter Requests
+    Servers->>Database: Access Data
+    Database->>FileSystem: Retrieve Data
+    FileSystem->>Employee: Store Data
+    ```
