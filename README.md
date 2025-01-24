@@ -4,7 +4,7 @@ DDoS Attack Sequence
 
 ```mermaid
 sequenceDiagram
-    Bots->>BotNet: Send Requests
+    Bots->BotNet: Send Requests
     BotNet->WebServer: Distribute Requests
     WebServer->Firewall: Process Requests
     Firewall->Servers: Filter Requests
