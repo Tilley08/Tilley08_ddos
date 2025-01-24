@@ -13,4 +13,3 @@ sequenceDiangram
     Firewall->>Servers: Filter Requests
     Servers->>Database: Access Data
     Database->>File System: Retrieve Data
-```
