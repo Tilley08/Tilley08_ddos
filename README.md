@@ -13,12 +13,12 @@ sequenceDiagram
     FileSystem->Employee: Store Data
 
 ```mermaid
-sequenceDiangram
-    Attacker->Bots: Vulnerable Access Point
-    Bots->Botnet: Send Requsts
-    Botnet->WebServer: Distribute Requests
-    Botnet->Legitimate Third Party Services: Phishing
-    Webserver->Firewall: Process Requests
-    Firewall->Servers: Filter Requests
-    Servers->Database: Access Data
-    Database->File System: Retrieve Data
+sequenceDiagram
+    Attacker->>Bots: Vulnerable Access Point
+    Bots->>Botnet: Send Requests
+    Botnet->>WebServer: Distribute Requests
+    Botnet->>LegitimateThirdPartyServices: Phishing
+    WebServer->>Firewall: Process Requests
+    Firewall->>Servers: Filter Requests
+    Servers->>Database: Access Data
+    Database->>FileSystem: Retrieve Data
